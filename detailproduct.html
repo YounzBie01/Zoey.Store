@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Product | Zoey. Store</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/logo2 zoey edit.png" width="200px"; height="50px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <img src="image/cart.png" width="30px";height="30px">
+            <img src="image/menu.png" class="menu-icon"
+            onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="small-container detail-product">
+        <div class="row">
+            <div class="kind-3">
+                <img src="image/8.jpg" id="DetailImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="image/ratuboko-1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/ratuboko-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/ratuboko-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/8.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="kind">
+                <p>Products / Candi</p>
+                <h1>Candi Ratuboko</h1>
+                <h4>Rp.25.000</h4>
+                <select>
+                    <option>Select size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                    <input type="number" value="1">
+                    <a href="" style="display: inline-block;" class="btn" style="font-size: 10px;">Add To Cart</a>
+                    <h3>Product Details    <i class="fa fa-indent"></i></h3>
+                    <p>Candi Ratuboko merupakan sebuah candi peninggalan kerajaan Hindu yang bertempat
+                        di Provinsi Daerah Istimewa Yogyakarta. Di sana terdapat beberapa kompleks
+                        candi dengan pemandangan alam sekitar yang luar biasa indah.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <!--tiitle-->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+<!--product-->
+<div class="small-container">
+    <div class="row">
+        <div class="kind-2">
+            <img src="image/wedi-ombo.jpg">
+            <h4>Pantai Wedi Ombo</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>Rp.25.000</p>
+        </div>
+        <div class="kind-2">
+            <img src="image/wedi-ombo.jpg">
+            <h4>Pantai Wedi Ombo</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>Rp.25.000</p>
+        </div>
+        <div class="kind-2">
+            <img src="image/wedi-ombo.jpg">
+            <h4>Pantai Wedi Ombo</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>Rp.25.000</p>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download Our App for Android and IOS Mobile Phone</p>
+                <div class="app-logo">
+                    <img src="image/play-store.png">
+                    <img src="image/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Zoey. Company</p>
+    </div>
+</div>
+
+<!--js for toggle menu-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight =="0px"){
+            MenuItems.style.maxHeight = "200px";
+        }else{
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+<!--JS for detail img-->
+<script>
+    var DetailPic = document.getElementById("DetailImg");
+    var SmallPic = document.getElementsByClassName("small-img");
+
+    SmallPic[0].onclick = function ()
+    {
+        DetailPic.src = SmallPic[0].src;
+
+    }
+    SmallPic[1].onclick = function ()
+    {
+        DetailPic.src = SmallPic[1].src;
+
+    }
+    SmallPic[2].onclick = function ()
+    {
+        DetailPic.src = SmallPic[2].src;
+
+    }
+    SmallPic[3].onclick = function ()
+    {
+        DetailPic.src = SmallPic[3].src;
+
+    }
+</script>
+</body>
+</html>
